@@ -28,7 +28,7 @@ should now show:
 	v15.0.1
 <br><br>
 
-##npm commands
+## npm commands
 
 open a terminal in the working folder,
 this command shows the nodes in the folder and type *npm ls*. if a valid package.json exists it should show.
@@ -40,7 +40,7 @@ eg:
 	└── jquery@3.5.1
 
 
-##node-js packages
+## node-js packages
 A valid node package should contain *package.json* file with following format:
 
 	{
