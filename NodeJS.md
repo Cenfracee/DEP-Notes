@@ -1,8 +1,8 @@
 Monday, 26. October 2020
 
-#NodeJS lessons
+# NodeJS lessons
 
-##installing nodejs
+## installing nodejs
 
 Download from
 [node-v15.0.1-linux-x64.tar.xz](https://nodejs.org/dist/v15.0.1/node-v15.0.1-linux-x64.tar.xz)
