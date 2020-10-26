@@ -1,1 +1,2 @@
-[NodeJS](https://github.com/Cenfracee/DEP-Notes/blob/master/NodeJS.md)
+
+[NodeJS](https://github.com/Cenfracee/DEP-Notes/wiki/NodeJS)
