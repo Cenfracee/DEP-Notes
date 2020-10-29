@@ -9,3 +9,4 @@
 - [2020-10-22 FXPorts FileIO & ImageIO.mkv](https://drive.google.com/file/d/1jyE7_akZSidERsrJw1c-E9a-JqRE9R2k/view?usp=sharing)
 - [2020-10-23 git & Android Navigation.mkv](https://drive.google.com/file/d/1K6SfD1VKwROeC2EYIS2LeC_c69-RpB84/view?usp=sharing)
 - [2020-10-26 git & intro to NodeJS.mkv](https://drive.google.com/file/d/16MgM-nk7O0Poh6s8F0P5HQuVanAd0SkR/view?usp=sharing)
+- [2020-10-29 HTML-CSS.mkv](https://drive.google.com/file/d/1OKy-j0mKO7cRTDMx0mdIajbGPnnhEsEi/view?usp=sharing)
