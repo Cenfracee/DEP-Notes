@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello HTML and CSS</title>
+    <style>
+        #header {
+            background-color: lightblue;
+            height: 105px;
+            top: 3px;
+        }
+
+        #header-image {
+            left: 13px;
+            position: sticky;
+            top: 10px;
+        }
+
+        #sidebar-left {
+            animation: ease-in;
+            background-color: skyblue;
+            float: left;
+            font-size: larger;
+            font-weight: bold;
+            height: 70%;
+            margin-bottom: 10px;
+            margin-top: 5px;
+            padding-top: 5%;
+            position: fixed;
+            text-align: center;
+            width: 15%;
+            z-index: 1;
+
+        }
+
+        #main {
+            background-color: darkkhaki;
+            float: left;
+            margin-left: 15.5%;
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 83%;
+        }
+
+        a:hover {
+            font-size: xx-large;
+            line-height: 150%;
+        }
+
+        #footer {
+            background-color: lightblue;
+            bottom: 3px;
+            clear: both;
+            height: 100px;
+            padding-top: 1px;
+            text-align: center;
+            z-index: 2;
+        }
+
+        #header, #footer {
+            left: 0;
+            position: sticky;
+            width: 100%;
+        }
+
+        .heightFill {
+            padding-bottom: 20%;
+        }
+
+
+        #coursesLink:hover + #courseList {
+            display: block;
+        }
+
+        td {
+            border: 3px solid red;
+            font-size: xx-large;
+        }
+
+        #courseList {
+            background-color: yellow;
+            border: 3px solid red;
+            display: none;
+            float: right;
+            z-index: 1;
+        }
+
+        .circle:hover +.circleHidden {
+            display: block;
+        }
+
+
+        .circle {
+            border: 3px solid red;
+            border-radius: 50%;
+            height: 150px;
+            line-height: 150px;
+            margin: 0;
+            position: fixed;
+            text-align: center;
+            width: 150px;
+            z-index: 3;
+            background-color: yellow;
+            bottom: 0;
+            float: bottom;
+            font-size: x-large;
+            right: 0;
+            font-weight: bold;
+        }
+
+        .circleHidden {
+            display: none;
+            border: 3px solid blue;
+            border-radius: 10%;
+            height: 450px;
+            line-height: 150px;
+            margin: 0;
+            position: fixed;
+            text-align: center;
+            width: 150px;
+            z-index: 3;
+            background-color: dodgerblue;
+            bottom: 0;
+            font-size: xx-large;
+            font-weight: bold;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <img height="90" id="header-image" src="resources/world-153534_640.png" width="90"/>
+</div>
+<div class="heightFill" id="sidebar-left">
+    <a href="">Home</a>
+    <br><br>
+    <a href="" id="coursesLink">Courses</a>
+    <table id="courseList">
+        <tr>
+            <td>CMJD</td>
+        </tr>
+        <tr>
+            <td>DEP</td>
+        </tr>
+        <tr>
+            <td>GDSE</td>
+        </tr>
+    </table>
+    <br><br>
+    <a href="">About us</a>
+    <br><br>
+    <a href="">Contact us</a>
+
+</div>
+<div class="heightFill" id="main">
+    <h1>Heading</h1>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe
+        sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem,
+        repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        volupt esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe
+        sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe
+        sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe
+        sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem,
+        repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe
+        sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eositaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eositaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eositaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eositaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eosatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio
+        dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        esse eum itaque labore molestiae mollitia nulla officia optio placeat porro rem, repellendus saepe sint
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur distinctio dolores
+        doloribus eos
+        <div class="circle"><span>Share</span></div>
+        <div class="circleHidden" style="margin-bottom: 160px">
+            <span>
+                <a href="">Facebook</a>
+                <a href="">Whatsapp</a>
+                <a href="">Twitter</a>
+            </span>
+        </div>
+    </div>
+
+</div>
+<div id="footer">
+    <h2>Copyright 2020 - IJSE</h2>
+
+    <div>Made by: Sathimantha Malalasekera. 903060735v</div>
+</div>
+
+</body>
+</html>
